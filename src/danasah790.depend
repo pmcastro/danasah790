@@ -1,0 +1,214 @@
+# depslib dependency file v1.0
+1520709664 source:c:\users\pecas\desktop\share\danasah790\windows\src\aleatorio.c
+	"definiciones.h"
+	"funciones.h"
+
+1558645801 c:\users\pecas\desktop\share\danasah790\windows\src\definiciones.h
+	<stdint.h>
+	<inttypes.h>
+
+1559930817 c:\users\pecas\desktop\share\danasah790\windows\src\funciones.h
+	<stdio.h>
+	<stdarg.h>
+
+1520709680 source:c:\users\pecas\desktop\share\danasah790\windows\src\atacado.c
+	"definiciones.h"
+	"variables.h"
+	"funciones.h"
+
+1563897756 c:\users\pecas\desktop\share\danasah790\windows\src\variables.h
+
+1563212673 source:c:\users\pecas\desktop\share\danasah790\windows\src\busqueda.c
+	<stdio.h>
+	<string.h>
+	<stdlib.h>
+	<math.h>
+	"definiciones.h"
+	"variables.h"
+	"funciones.h"
+	<windows.h>
+	<unistd.h>
+
+1563958945 source:c:\users\pecas\desktop\share\danasah790\windows\src\configura.c
+	<stdio.h>
+	<string.h>
+	<stdlib.h>
+	<math.h>
+	<windows.h>
+	<io.h>
+	<unistd.h>
+	"definiciones.h"
+	"variables.h"
+	"funciones.h"
+
+1558873634 source:c:\users\pecas\desktop\share\danasah790\windows\src\consola.c
+	<stdio.h>
+	<string.h>
+	<stdlib.h>
+	<inttypes.h>
+	"definiciones.h"
+	"variables.h"
+	"funciones.h"
+
+1563897778 source:c:\users\pecas\desktop\share\danasah790\windows\src\danasah.c
+	<windows.h>
+	<stdio.h>
+	<string.h>
+	<stdlib.h>
+	<time.h>
+	"definiciones.h"
+	"variables.h"
+	"funciones.h"
+
+1558873810 source:c:\users\pecas\desktop\share\danasah790\windows\src\egbb.c
+	<stdio.h>
+	"definiciones.h"
+	"variables.h"
+	"funciones.h"
+	<windows.h>
+	<dlfcn.h>
+	<string.h>
+	<unistd.h>
+
+1520709738 source:c:\users\pecas\desktop\share\danasah790\windows\src\egtb.c
+	<stdlib.h>
+	<stdio.h>
+	<string.h>
+	"definiciones.h"
+	"variables.h"
+	"funciones.h"
+	"gtb/gtb-probe.h"
+
+1464738732 c:\users\pecas\desktop\share\danasah790\windows\src\gtb\gtb-probe.h
+	<stdlib.h>
+
+1520709745 source:c:\users\pecas\desktop\share\danasah790\windows\src\entradas.c
+	<stdio.h>
+	<windows.h>
+	<sys/time.h>
+	<string.h>
+	<unistd.h>
+	<stdlib.h>
+	"definiciones.h"
+	"variables.h"
+	"funciones.h"
+
+1559813419 source:c:\users\pecas\desktop\share\danasah790\windows\src\evalua.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"definiciones.h"
+	"variables.h"
+	"funciones.h"
+	"rebel/defines.c"
+	"rebel/tables.c"
+	"rebel/pst.c"
+	"rebel/vars.c"
+	"rebel/attack.c"
+	"rebel/eval1.c"
+	"rebel/eval2.c"
+	"rebel/init.c"
+	"rebel/quadrant.c"
+
+1463416167 c:\users\pecas\desktop\share\danasah790\windows\src\rebel\defines.c
+
+1463416168 c:\users\pecas\desktop\share\danasah790\windows\src\rebel\tables.c
+
+1463416167 c:\users\pecas\desktop\share\danasah790\windows\src\rebel\pst.c
+
+1463416168 c:\users\pecas\desktop\share\danasah790\windows\src\rebel\vars.c
+
+1463416167 c:\users\pecas\desktop\share\danasah790\windows\src\rebel\attack.c
+
+1463416167 c:\users\pecas\desktop\share\danasah790\windows\src\rebel\eval1.c
+
+1463416167 c:\users\pecas\desktop\share\danasah790\windows\src\rebel\eval2.c
+
+1463416167 c:\users\pecas\desktop\share\danasah790\windows\src\rebel\init.c
+
+1463416167 c:\users\pecas\desktop\share\danasah790\windows\src\rebel\quadrant.c
+
+1558285469 source:c:\users\pecas\desktop\share\danasah790\windows\src\fen.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"definiciones.h"
+	"variables.h"
+	"funciones.h"
+
+1528022487 source:c:\users\pecas\desktop\share\danasah790\windows\src\hash.c
+	<stdio.h>
+	<string.h>
+	<stdlib.h>
+	"definiciones.h"
+	"variables.h"
+	"funciones.h"
+
+1520709791 source:c:\users\pecas\desktop\share\danasah790\windows\src\libro.c
+	<stdio.h>
+	<string.h>
+	<stdlib.h>
+	<windows.h>
+	<io.h>
+	<unistd.h>
+	"definiciones.h"
+	"variables.h"
+	"funciones.h"
+
+1559330449 source:c:\users\pecas\desktop\share\danasah790\windows\src\movimientos.c
+	<string.h>
+	"definiciones.h"
+	"variables.h"
+	"funciones.h"
+
+1559232859 source:c:\users\pecas\desktop\share\danasah790\windows\src\multipv.c
+	<stdio.h>
+	<string.h>
+	<stdlib.h>
+	<math.h>
+	"definiciones.h"
+	"variables.h"
+	"funciones.h"
+	<windows.h>
+	<unistd.h>
+
+1563900276 source:c:\users\pecas\desktop\share\danasah790\windows\src\salidas.c
+	<stdio.h>
+	<string.h>
+	"definiciones.h"
+	"variables.h"
+	"funciones.h"
+
+1554675216 source:c:\users\pecas\desktop\share\danasah790\windows\src\see.c
+	"definiciones.h"
+	"variables.h"
+	"funciones.h"
+
+1520709855 source:c:\users\pecas\desktop\share\danasah790\windows\src\test.c
+	<stdio.h>
+	<string.h>
+	"definiciones.h"
+	"variables.h"
+	"funciones.h"
+
+1563900174 source:c:\users\pecas\desktop\share\danasah790\windows\src\uci.c
+	<stdio.h>
+	<string.h>
+	<stdlib.h>
+	"definiciones.h"
+	"variables.h"
+	"funciones.h"
+	"gtb/gtb-probe.h"
+
+1563900174 source:c:\users\pecas\desktop\share\danasah790\windows\src\variables.c
+	"definiciones.h"
+
+1563928491 source:c:\users\pecas\desktop\share\danasah790\windows\src\xboard.c
+	<windows.h>
+	<stdio.h>
+	<string.h>
+	<stdlib.h>
+	"definiciones.h"
+	"variables.h"
+	"funciones.h"
+
