@@ -1,0 +1,100 @@
+ ###########################################################################
+ #   Copyright (C) 2009-2010 by Pedro Castro                             #
+ #   pecastro@msn.com                                              #
+ #                                                                         #
+ #   This program is free software: you can redistribute it and/or modify  #
+ #   it under the terms of the GNU General Public License as published by  #
+ #   the Free Software Foundation, either version 3 of the License, or     #
+ #   (at your option) any later version.                                   #
+ #                                                                         #
+ #   This program is distributed in the hope that it will be useful,       #
+ #   but WITHOUT ANY WARRANTY; without even the implied warranty of        #
+ #   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the         #
+ #   GNU General Public License for more details.                          #
+ #                                                                         #
+ #   You should have received a copy of the GNU General Public License     #
+ #   along with this program.  If not, see <http://www.gnu.org/licenses/>. #
+ ###########################################################################
+
+CXX = gcc
+CXXFLAGS = -Wall -W
+LIBS = ./gtb/ARM/32/libgtb.a
+
+OS = android
+ARCH = arm
+DEBUG = no
+STATIC = no
+
+ifeq ($(DEBUG),yes)
+	CXXFLAGS += -O0 -g
+else
+	CXXFLAGS += -O3 -fno-exceptions -g0 -s
+	ifneq ($(OS),osx)
+        LDFLAGS += -s
+	endif
+endif
+
+ifeq ($(STATIC),yes)
+	CXXFLAGS += -static
+	LDFLAGS += -static
+endif
+
+ifeq ($(ARCH),x64)
+	CXXFLAGS += -m64
+	LDFLAGS += -m64
+endif
+
+ifeq ($(ARCH),x64_SSE4)
+	CXXFLAGS += -m64 -DSSE4
+	LDFLAGS += -m64
+endif
+
+ifeq ($(ARCH),i686)
+	CXXFLAGS += -m32 -march=i686
+	LDFLAGS += -m32 -march=i686
+endif
+
+ifeq ($(OS),windows)
+	ifeq ($(ARCH),x64)
+		CXX = x86_64-w64-mingw32-g++
+	endif
+	ifeq ($(ARCH),x64_SSE4)
+        	CXX = x86_64-w64-mingw32-g++
+	endif
+	ifeq ($(ARCH),i686)
+		CXX = i586-pc-mingw32-g++
+	endif
+endif
+
+ifeq ($(OS),linux)
+	LIBS += -lpthread
+	ifeq ($(ARCH),i686)
+		LDFLAGS += -L/usr/lib32/debug/
+	endif
+endif
+
+ifeq ($(OS),osx)
+	LIBS += -lpthread
+endif
+
+ifeq ($(OS),android)
+	CXX = arm-none-linux-gnueabi-gcc
+endif
+
+OBJECTS = aleatorio.o  atacado.o  busqueda.o  danasah.o  egbb.o  entradas.o  \
+     evalua.o  fen.o  movimientos.o  hash.o  configura.o  libro.o  salidas.o  \
+     see.o  test.ovariables.o  xboard.o  uci.o  consola.o  egtb.o
+
+OBJ = $(addprefix obj/, $(OBJECTS))
+
+all: danasah
+
+.c.o: 
+	$(CXX) $(CFLAGS) -c $< -o $@
+
+danasah: $(OBJS) 
+	$(CXX) -o danasah $(OBJS) $(CFLAGS) $(LIBS)
+
+clean:
+	del *.o
+	del danasah

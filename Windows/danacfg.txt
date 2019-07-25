@@ -1,0 +1,88 @@
+# DanaSah and DanaSah LS configuration file for Windows
+#
+# [Table Hash Size in Mbytes]
+# ---------------------------
+# You can prove to use any value, values 8-16(bullet), 32-64-128(blitz) and 256-512-1024 Mb(standard) 
+# have been proven successfully.
+#
+hash 256
+#
+#
+# [Polyglot Opening book (true/false)]
+# ------------------------------------
+# Thanks to Ed Shröeder and Jeroen Noomen.
+#
+ownbook false
+book 	../book/book.bin	
+#
+#
+# [Scorpio bitbases]
+# ------------------
+# Thanks to Daniel Shawul.
+# Size in disk: 4 men 3.5 Mb, 5 men 211 Mb,  6 men 48.1 Gb.
+# Modify path if you want to use your own distribution of Scorpio bitbases, ex. egbb_path d:\egbb\
+# Men: number of installed pieces, 4-5-6.
+# For 4 men use 4 Mb cache, for 5 men 16 Mb and for 6 men 64 Mb.
+# load_type 1 is recommended and use 4 men bitbases in memory (10 Mb). load_type 3 use 5 men in memory (250 Mb).
+# Use bitbases: 1 (yes) / 0 (no)
+#
+egbb_path 	../egbb/
+egbb_men	4
+egbb_cache_size 4
+egbb_load_type 	1
+use_egbb 	1
+#
+#
+# [Gaviota tablebases]
+# --------------------
+# Thanks to Miguel Ballicora
+# Size in disk: 6.54 Gb.
+# Modify path if you want to use your own distribution of Gaviota tablebases, ex. egbb_path d:\gtb\
+# Use tablebases: 1 (yes) / 0 (no)
+#
+egtb_path 	../gtb/gtb4
+egtb_cache_size 16
+use_egtb 	1
+#
+#
+# [ELO for limitstrength version]
+# -------------------------------
+# limistrength: true or false
+# You can adjust elo between 0 and 2500 (if the device has enough power)
+# elo_type: engine, computer(chesscomputer) or human.
+# elo_type engine play Elo engine as --> https://sites.google.com/site/motoresdeajedrez/motores-hispanos/elo
+# elo_type computer play Elo computer as --> http://www.schach-computer.info/wiki/index.php/Wiki-Elo-Liste_En
+# elo_type human play as --> Elo FIDE human.
+# diff adjusts elo according to different lists, not change.
+#
+limitstrength true
+elo 2000
+elo_type human
+diff_engine 0
+diff_chesscomputer_engine 466
+diff_human_chesscomputer 70
+#
+#
+# [Levels for limitstrength version]
+# ----------------------------------
+# 0  No easy level		Elo-Regulation or Full
+# 1  Random move		
+# 2  Newcomer			Elo random 500 - 999
+# 3  Beginner			Elo random 1000 - 1199
+# 4  Weak club player		Elo random 1200 - 1399
+# 5  Average club player	Elo random 1400 - 1699	
+# 6  Strong club player		Elo random 1700 - 1999
+# 7  Expert			Elo random 2000 - 2199
+# 8  Candidate Master (CM)	Elo random 2200 - 2299	
+# 9  FIDE Master (FM)		Elo random 2300 - 2399	
+# 10 International Master (IM)	Elo random 2400 - 2499	
+#
+easylevel 0
+#
+#
+# [Noise]
+# -------
+#No print PV until n nodes are searched.
+#
+noise 0
+
